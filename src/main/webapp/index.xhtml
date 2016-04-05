@@ -12,9 +12,9 @@
         <h2>JSF  Example</h2>
        
         <h:form>
-           <h:inputText value="#{welcomeBean.name}"></h:inputText>
-           <h:commandButton value="Welcome Me" action="#{welcomeBean.welcome}" includeViewParams="true">
-                <f:param name="name" value="#{welcomeBean.name}" />
+           <h:inputText value="#{requestBean.name}"></h:inputText>
+           <h:commandButton value="Welcome Me" action="#{requestBean.welcome}" includeViewParams="true">
+                <f:param name="name" value="#{requestBean.name}" />
            </h:commandButton>
         </h:form>
         

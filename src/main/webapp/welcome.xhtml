@@ -5,8 +5,8 @@
 xmlns:f="http://xmlns.jcp.org/jsf/core">
 
 <f:metadata>
-    <f:viewParam id="name" name="name" value="#{welcomeBean.name}" required="true"/>   
-    <f:event type="preRenderView" listener="#{welcomeBean.load}" />
+    <f:viewParam id="name" name="name" value="#{requestBean.name}" required="true"/>   
+    <f:event type="preRenderView" listener="#{requestBean.load}" />
 </f:metadata>
 
 <h:head>
@@ -14,7 +14,7 @@ xmlns:f="http://xmlns.jcp.org/jsf/core">
 </h:head>
 <h:body bgcolor="white">
     <h2>JSF example</h2>
-    <h2>Welcome <h:outputText value="#{welcomeBean.name}" /></h2>
+    <h2>Welcome <h:outputText value="#{requestBean.name}" /></h2>
     <h:message for="name" />
 </h:body>
 </html>
